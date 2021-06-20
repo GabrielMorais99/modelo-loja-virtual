@@ -1,7 +1,8 @@
-const app = require('express').Router();
-const { join } = require('path');
+const app = require('express').Router()
+const { join } = require('path')
 
-app.get('/', (req, res) =>
-    require(join(__dirname, '../controllers/index')).index(req, res));
-
-module.exports = app;
+app.get('/api/user', (req, res) =>
+	require(join(__dirname, '../controllers/index')).index(req, res)
+)
+app.get('/', (req, res) => res.send('App Works !!!!'))
+module.exports = app

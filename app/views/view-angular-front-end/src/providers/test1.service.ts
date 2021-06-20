@@ -7,13 +7,11 @@ import { catchError, retry } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class Test1Service {
+  private URL: string = '/api/user';
   constructor(private http: HttpClient) {}
 
-  public get(){
-  var response = this.http.get(this.)
-
-  return response.subscribe();
+  get() {
+    var response = this.http.get(this.URL);
+    return response;
   }
-
-
 }
