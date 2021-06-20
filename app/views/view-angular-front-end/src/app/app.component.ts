@@ -9,7 +9,9 @@ import { Test1Service } from 'src/providers/test1.service';
 export class AppComponent implements OnDestroy {
   title = 'view-angular-front-end';
   users: any[] = [];
-  constructor(private serv: Test1Service) {}
+  constructor(private serv: Test1Service) {
+    this.getTest();
+  }
 
   ngOnDestroy() {}
 
