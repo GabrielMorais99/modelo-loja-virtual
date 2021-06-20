@@ -1,0 +1,32 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Caneta Bic Preta",
+			"price": 5
+		},
+		{
+			"id": 2,
+			"name": "Caneta Bic Verde",
+			"price": 6
+		},
+		{
+			"id": 3,
+			"name": "Notbook",
+			"price": 11115
+		},
+		{
+			"name": "Notbook",
+			"id": 4
+		},
+		{
+			"name": "Notbook",
+			"id": 5
+		},
+		{
+			"name": "tst",
+			"price": "1010101",
+			"id": 6
+		}
+	]
+}

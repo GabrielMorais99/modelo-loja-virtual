@@ -1,12 +1,15 @@
-const express = require('express');
-const { join } = require('path');
+const express = require('express')
+const { join } = require('path')
 
-const app = express();
+const app = express()
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }))
 
-app.set('views', join(__dirname, '../app/public/views/'));
+app.set(
+	'views',
+	join(__dirname, '../app/public/views/view-angular-front-end/src')
+)
 
-app.use(require(join(__dirname, '../app/routes/index')));
+app.use(require(join(__dirname, '../app/routes/index')))
 
-module.exports = app;
+module.exports = app
